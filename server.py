@@ -38,16 +38,17 @@ def listen_commands():
             run_server()
         elif(command == "stop"):
             stop_server()
-        elif(command == "update_rules"):
+        elif(command == "update"):
             stop_server()
             process_server_config_file()
         command: str = input("Digite o comando:")
 
 def set_server_configs():
     command: str = ""
-    #command += str("XPMultiplier=" + const_server_configs['XPMultiplier'] + "\n")
-    for tags in const_server_configs:
-        print(tags)
+    for tag in const_server_configs:
+        if(tag != "server_config_file"):
+            command += (str(tag + "=" + const_server_configs[tag] + "\n"))
+            print(command)
     return command
 
 def write_server_config_file(file_content):
@@ -68,8 +69,8 @@ def process_server_config_file():
             if(flag == True):
                 command += set_server_configs()
                 flag = False
-    if(command != ""):
-        write_server_config_file(command)
+    #sif(command != ""):
+        #write_server_config_file(command)
 
 if __name__ == "__main__" :
     try:
