@@ -21,7 +21,7 @@ def load_config_files():
         const_server_configs = data
         const_server_config_file = data['server_config_file']
 
-    global const_game_configs
+    global const_game_configs,const_game_config_file
     with open('game_config.json') as json_file:
         data = json.load(json_file)
         const_game_configs = data
@@ -95,10 +95,7 @@ def process_game_config_file():
     command: str = ""
     command += set_game_configs()
     if(command != ""):
-        try:
-            write_game_config_file(command)
-        except:
-            print("Foi aqui msm")
+        write_game_config_file(command)
 
 if __name__ == "__main__" :
     try:
