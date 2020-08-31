@@ -1,3 +1,4 @@
 {
-    "server_config_file": "/home/caioslpp/server/ShooterGame/Saved/Config/LinuxServer/GameUserSettings.ini"
+    "server_config_file": "/home/caioslpp/server/ShooterGame/Saved/Config/LinuxServer/GameUserSettings.ini",
+    "XPMultiplier": "50.0"
 }
