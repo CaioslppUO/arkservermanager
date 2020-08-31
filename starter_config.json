@@ -1,0 +1,23 @@
+{
+    "launch_opt": "#!/bin/bash",
+    "launch_file": "/home/caioslpp/server/ShooterGame/Binaries/Linux/ShooterGameServer ",
+    "map": "TheIsland?",
+    "listen": "Listen?",
+    "server_name": "SessionName=ArkServer?",
+    "password": "ServerPassword=0?",
+    "admin_password": "AdminPassword=000?",
+    "opt1": "AllowFlyerCarryPvE=true?",
+    "opt2": "OverrideStructurePlatformPrevention=true?",
+    "opt3": "OxygenSwimSpeedStatMultiplier=3.0?",
+    "opt4": "PreventSpawnAnimations=false?",
+    "opt5": "PvEAllowStructuresAtSupplyDrops=false?",
+    "opt6": "ShowFloatingDamageText=true?",
+    "opt7": "AdminLogging=true?",
+    "opt8": "AllowRaidDinoFeeding?",
+    "opt9": "AllowHitMarkers=true ",
+    "opt10": " -server",
+    "opt11": " -log",
+    "opt12": " -ForceAllowCaveFlyers",
+    "opt13": " -ForceRespawnDinos",
+    "opt14": " -ActiveEvent=FearEvolved"
+}

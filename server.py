@@ -7,6 +7,7 @@ const_game_config_file: str = ''
 const_base_server_config_file: str = "./base_server_config.ini"
 const_server_configs = None
 const_game_configs = None
+const_starter_configs = None
 
 def load_config_files():
     global const_script_folder,const_script_name
@@ -26,6 +27,11 @@ def load_config_files():
         data = json.load(json_file)
         const_game_configs = data
         const_game_config_file = data['game_config_file']
+
+    global const_starter_configs
+    with open('starter_config.json') as json_file:
+        data = json.load(json_file)
+        const_starter_configs = data
 
 def run_server():
     command: str = const_script_folder + "./" + const_script_name + "& "
@@ -50,6 +56,7 @@ def listen_commands():
             stop_server()
             process_server_config_file()
             process_game_config_file()
+            process_starter_config()
         command: str = input("Digite o comando:")
 
 def set_server_configs():
@@ -96,6 +103,13 @@ def process_game_config_file():
     command += set_game_configs()
     if(command != ""):
         write_game_config_file(command)
+
+def process_starter_config():
+    command = ""
+    for tag in const_starter_configs:
+        command += str(const_script_name[tag] + "\n")
+    with open(const_script_folder + const_script_name, 'w') as file:
+        file.write(command)
 
 if __name__ == "__main__" :
     try:
