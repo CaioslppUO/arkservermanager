@@ -15,7 +15,7 @@ def run_server():
     os.system(command)
 
 def stop_server():
-    command: str = "pkill " + const_script_name
+    command: str = "pkill ShooterGameServer"
     os.system(command)
 
 def listen_commands():
