@@ -84,11 +84,11 @@ def set_game_configs():
     command: str = ""
     for tag in const_game_configs:
         if(tag != "game_config_file"):
-            command += (str(tag + "=" + const_server_configs[tag] + "\n"))
+            command += (str(tag + "=" + const_game_configs[tag] + "\n"))
     return command
 
 def write_game_config_file(file_content: str):
-    with open(const_server_config_file, 'w') as file:
+    with open(const_game_config_file, 'w') as file:
         file.write(file_content)
 
 def process_game_config_file():
