@@ -106,8 +106,13 @@ def process_game_config_file():
 
 def process_starter_config():
     command = ""
+    i = 0
     for tag in const_starter_configs:
         command += str(const_starter_configs[tag])
+        if(i == 0):
+            command += "\n"
+            i = 1
+    command += "\n"
     with open(const_script_folder + const_script_name, 'w') as file:
         file.write(command)
 
