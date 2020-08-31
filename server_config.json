@@ -6,7 +6,7 @@
     "AllowFlyerCarryPvE": "True",
     "bAllowPlatformSaddleMultiFloors": "True",
     "DifficultyOffset": "0.2",
-    "TamingSpeedMultiplier": "10.0",
+    "TamingSpeedMultiplier": "4.5",
     "HarvestAmountMultiplier": "5.0",
     "ResourcesRespawnPeriodMultiplier": "3.0",
     "AllowCaveBuildingPvE": "True",
