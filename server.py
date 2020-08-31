@@ -92,7 +92,7 @@ def write_game_config_file(file_content: str):
         file.write(file_content)
 
 def process_game_config_file():
-    command: str = ""
+    command: str = "[/script/shootergame.shootergamemode]\n"
     command += set_game_configs()
     if(command != ""):
         write_game_config_file(command)
