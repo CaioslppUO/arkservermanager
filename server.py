@@ -93,12 +93,12 @@ def write_game_config_file(file_content: str):
 
 def process_game_config_file():
     command: str = ""
-    try:
-        command += set_game_configs()
-    except:
-        print("Foi aqui 2")
+    command += set_game_configs()
     if(command != ""):
-        write_game_config_file(command)
+        try:
+            write_game_config_file(command)
+        except:
+            print("Foi aqui msm")
 
 if __name__ == "__main__" :
     try:
