@@ -45,7 +45,9 @@ def listen_commands():
 
 def set_server_configs():
     command: str = ""
-    command += str("XPMultiplier=" + const_server_configs['XPMultiplier'] + "\n")
+    #command += str("XPMultiplier=" + const_server_configs['XPMultiplier'] + "\n")
+    for tags in const_server_configs:
+        print(tags)
     return command
 
 def write_server_config_file(file_content):
