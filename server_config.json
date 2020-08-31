@@ -12,6 +12,5 @@
     "AllowCaveBuildingPvE": "True",
     "DisablePvEGamma": "True",
     "AutoSavePeriodMinutes": "5.0",
-    "MaxTamedDinos": "10000.0",
-    "ActiveMods": "899987403"
-}
+    "MaxTamedDinos": "10000.0"
+}   
