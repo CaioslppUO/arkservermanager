@@ -14,7 +14,7 @@
     "opt6": "ShowFloatingDamageText=true?",
     "opt7": "AdminLogging=true?",
     "opt8": "AllowRaidDinoFeeding?",
-    "opt9": "AllowHitMarkers=true?",
+    "opt9": "AllowHitMarkers=true",
     "opt11": " -server",
     "opt12": " -log",
     "opt13": " -ForceAllowCaveFlyers",
