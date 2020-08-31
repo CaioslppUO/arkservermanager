@@ -3,6 +3,7 @@ import json,os,time
 const_script_folder: str = ''
 const_script_name: str = ''
 const_server_config_file: str = ''
+const_base_server_config_file: str = "./base_server_config.ini"
 const_server_configs = None
 
 def load_config_files():
@@ -50,7 +51,7 @@ def write_server_config_file(file_content):
 def process_server_config_file():
     command = ""
     flag = True
-    with open(const_server_config_file, 'r') as file:
+    with open(const_base_server_config_file, 'r') as file:
         lines = file.read().splitlines()
         for line in lines:
             command += (line + "\n")
