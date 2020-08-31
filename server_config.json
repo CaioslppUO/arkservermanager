@@ -1,4 +1,16 @@
 {
     "server_config_file": "/home/caioslpp/server/ShooterGame/Saved/Config/LinuxServer/GameUserSettings.ini",
-    "XPMultiplier": "50.0"
-}
+    "XPMultiplier": "3.0",
+    "DisableStructureDecayPvE": "True",
+    "DisableDinoDecayPvE": "True",
+    "AllowFlyerCarryPvE": "True",
+    "bAllowPlatformSaddleMultiFloors": "True",
+    "DifficultyOffset": "0.2",
+    "TamingSpeedMultiplier": "20.0",
+    "HarvestAmountMultiplier": "5.0",
+    "ResourcesRespawnPeriodMultiplier": "3.0",
+    "AllowCaveBuildingPvE": "True",
+    "DisablePvEGamma": "True",
+    "AutoSavePeriodMinutes": "5.0",
+    "MaxTamedDinos": "10000.0"
+}   
