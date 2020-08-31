@@ -26,6 +26,10 @@ def run_server():
 def stop_server():
     command: str = "killall ShooterGameServer"
     os.system(command)
+    time.sleep(4)
+    command: str = "killall ShooterGameServer"
+    os.system(command)
+    time.sleep(4)
 
 def listen_commands():
     command: str = input("Digite o comando:")
@@ -34,9 +38,9 @@ def listen_commands():
             run_server()
         elif(command == "stop"):
             stop_server()
-            time.sleep(4)
+        elif(command == "update_rules"):
             stop_server()
-            time.sleep(4)
+            process_server_config_file()
         command: str = input("Digite o comando:")
 
 def set_server_configs():
@@ -68,7 +72,6 @@ def process_server_config_file():
 if __name__ == "__main__" :
     try:
         load_config_files()
-        #listen_commands()
-        process_server_config_file()
+        listen_commands()
     except:
         print("Deu ruim")
