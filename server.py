@@ -48,7 +48,6 @@ def set_server_configs():
     for tag in const_server_configs:
         if(tag != "server_config_file"):
             command += (str(tag + "=" + const_server_configs[tag] + "\n"))
-            print(command)
     return command
 
 def write_server_config_file(file_content):
@@ -69,8 +68,8 @@ def process_server_config_file():
             if(flag == True):
                 command += set_server_configs()
                 flag = False
-    #sif(command != ""):
-        #write_server_config_file(command)
+    if(command != ""):
+        write_server_config_file(command)
 
 if __name__ == "__main__" :
     try:
