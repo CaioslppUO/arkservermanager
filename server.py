@@ -1,4 +1,4 @@
-import json,os,time
+import json,os,threading
 
 const_script_folder: str = ''
 const_script_name: str = ''
@@ -21,7 +21,8 @@ def listen_commands():
     while(True):
         command = input("Digite o comando:")
         if(command == "run"):
-            run_server()
+            thread = threading.Thread(target=run_server, args=(0,))
+            thread.start()
         elif(command == "stop"):
             stop_server()
 
