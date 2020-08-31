@@ -24,6 +24,5 @@
     "KillXPMultiplier": "4.5",
     "HarvestXPMultiplier": "1.5",
     "CraftXPMultiplier": "3.0",
-    "GenericXPMultiplier": "2.0",
-    "[ModInstaller]": "\nModIDS=895711211\nModIDS=839162288\nModIDS=1681125667\nModIDS=1315573129\nModIDS=902157012\nModIDS=899987403\nModIDS=668239751\nModIDS=693416678\nModIDS=719928795\nModIDS=821530042\nModIDS=761535755\nModIDS=733089781\nModIDS=558651608\nModIDS=731604991\nModIDS=1445181373\nModIDS=1461193123"
+    "GenericXPMultiplier": "2.0"
 }
