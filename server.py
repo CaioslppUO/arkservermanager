@@ -49,10 +49,7 @@ def listen_commands():
         elif(command == "update"):
             stop_server()
             process_server_config_file()
-            try:
-                process_game_config_file()
-            except:
-                print("Foi aqui")
+            process_game_config_file()
         command: str = input("Digite o comando:")
 
 def set_server_configs():
@@ -96,7 +93,10 @@ def write_game_config_file(file_content: str):
 
 def process_game_config_file():
     command: str = ""
-    command += set_game_configs()
+    try:
+        command += set_game_configs()
+    except:
+        print("Foi aqui 2")
     if(command != ""):
         write_game_config_file(command)
 
