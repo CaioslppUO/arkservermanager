@@ -1,4 +1,4 @@
-import json,os
+import json,os,time
 
 const_script_folder: str = ''
 const_script_name: str = ''
@@ -11,12 +11,23 @@ def load_config_files():
         const_script_name = data['script_name']
 
 def run_server():
-    command = const_script_folder + "./" + const_script_name
+    command: str = const_script_folder + "./" + const_script_name
     os.system(command)
+
+def stop_server():
+    command: str = ""
+
+def listen_commands():
+    while(True):
+        command = input("Digite o comando:")
+        if(command == "run"):
+            run_server()
+        elif(command == "stop"):
+            stop_server()
 
 if __name__ == "__main__" :
     try:
         load_config_files()
-        run_server()
+        listen_commands()
     except:
         print("Deu ruim")
