@@ -73,17 +73,20 @@ def write_server_config_file(file_content):
 def process_server_config_file():
     command: str = ""
     flag = True
+    flag2 = True
     with open(const_base_server_config_file, 'r') as file:
         lines = file.read().splitlines()
         for line in lines:
             command += (line + "\n")
             if(line == "[ServerSettings]"):
                 flag = False
+                flag2 = False
             if(line == ""):
                 flag = True
-            if(flag == True):
+            if(flag == True and flag2 == False):
                 command += set_server_configs()
                 flag = False
+                flag2 = True
     if(command != ""):
         write_server_config_file(command)
 
