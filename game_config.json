@@ -21,8 +21,19 @@
     "BabyCuddleLoseImprintQualitySpeedMultiplier": "0.001",
     "bDisableStructurePlacementCollision": "True",
     "PassiveTameIntervalMultiplier": "0.02",
-    "KillXPMultiplier": "4.5",
-    "HarvestXPMultiplier": "1.5",
-    "CraftXPMultiplier": "3.0",
-    "GenericXPMultiplier": "2.0"
+    "KillXPMultiplier": "2.0",
+    "HarvestXPMultiplier": "1.1",
+    "CraftXPMultiplier": "1.2",
+    "GenericXPMultiplier": "1.1",
+    "PerLevelStatsMultiplier_Player_Add[0]": "2.5",
+    "PerLevelStatsMultiplier_Player_Add[1]": "2.5",
+    "PerLevelStatsMultiplier_Player_Add[3]": "4",
+    "PerLevelStatsMultiplier_Player_Add[4]": "4",
+    "PerLevelStatsMultiplier_Player_Add[5]": "4",
+    "PerLevelStatsMultiplier_Player_Add[6]": "5",
+    "PerLevelStatsMultiplier_Player_Add[7]": "3",
+    "PerLevelStatsMultiplier_Player_Add[8]": "3",
+    "PerLevelStatsMultiplier_Player_Add[9]": "6",
+    "PerLevelStatsMultiplier_Player_Add[10]": "5",
+    "PerLevelStatsMultiplier_Player_Add[11]": "9"
 }
