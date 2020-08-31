@@ -15,7 +15,7 @@ def run_server():
     os.system(command)
 
 def stop_server():
-    command: str = ""
+    command: str = "pkill " + const_script_name
 
 def listen_commands():
     thread = threading.Thread(target=run_server)
@@ -24,7 +24,9 @@ def listen_commands():
         if(command == "run"):
             thread.start()
         elif(command == "stop"):
+            stop_server()
             thread.join()
+
 
 if __name__ == "__main__" :
     try:
