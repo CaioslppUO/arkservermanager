@@ -25,7 +25,9 @@ def listen_commands():
             run_server()
         elif(command == "stop"):
             stop_server()
-            time.sleep(10)
+            time.sleep(4)
+            stop_server()
+            time.sleep(4)
 
 
 if __name__ == "__main__" :
