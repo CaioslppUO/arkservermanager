@@ -20,13 +20,13 @@ def stop_server():
 
 def listen_commands():
     thread = threading.Thread(target=run_server)
+    thread.daemon = True
     while(True):
         command = input("Digite o comando:")
         if(command == "run"):
             thread.start()
         elif(command == "stop"):
             stop_server()
-            thread.join()
 
 
 if __name__ == "__main__" :
