@@ -1,4 +1,4 @@
 {
     "script_location": "/home/caioslpp/server/ShooterGame/Binaries/Linux/",
-    "script_name": "start_server.sh"
+    "script_name": "server_start.sh"
 }
