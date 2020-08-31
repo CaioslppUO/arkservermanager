@@ -11,7 +11,7 @@ def load_config_files():
         const_script_name = data['script_name']
 
 def run_server():
-    command: str = const_script_folder + "./" + const_script_name
+    command: str = const_script_folder + "./" + const_script_name + "& "
     os.system(command)
 
 def stop_server():
@@ -19,12 +19,10 @@ def stop_server():
     os.system(command)
 
 def listen_commands():
-    thread = threading.Thread(target=run_server)
-    thread.daemon = True
     while(True):
         command = input("Digite o comando:")
         if(command == "run"):
-            thread.start()
+            run_server()
         elif(command == "stop"):
             stop_server()
 
