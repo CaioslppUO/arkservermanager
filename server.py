@@ -21,7 +21,7 @@ def listen_commands():
     while(True):
         command = input("Digite o comando:")
         if(command == "run"):
-            thread = threading.Thread(target=run_server, args=(1,))
+            thread = threading.Thread(target=run_server)
             thread.start()
         elif(command == "stop"):
             stop_server()
