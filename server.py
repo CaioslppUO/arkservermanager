@@ -1,4 +1,4 @@
-import json,os,threading
+import json,os,time
 
 const_script_folder: str = ''
 const_script_name: str = ''
@@ -25,6 +25,7 @@ def listen_commands():
             run_server()
         elif(command == "stop"):
             stop_server()
+            time.sleep(10)
 
 
 if __name__ == "__main__" :
