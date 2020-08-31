@@ -39,7 +39,8 @@ def listen_commands():
 def process_server_config_file():
     with open(const_server_config_file, 'r') as file:
         lines = file.read().splitlines()
-        print(lines)
+        for line in lines:
+            print(line)
 
 if __name__ == "__main__" :
     try:
