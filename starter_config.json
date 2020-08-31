@@ -15,6 +15,7 @@
     "opt7": "AdminLogging=true?",
     "opt8": "AllowRaidDinoFeeding?",
     "opt9": "AllowHitMarkers=true?",
+    "opt10": "GameModIds=895711211",
     "opt11": " -server",
     "opt12": " -log",
     "opt13": " -ForceAllowCaveFlyers",
