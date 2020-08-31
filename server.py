@@ -18,13 +18,13 @@ def stop_server():
     command: str = ""
 
 def listen_commands():
+    thread = threading.Thread(target=run_server)
     while(True):
         command = input("Digite o comando:")
         if(command == "run"):
-            thread = threading.Thread(target=run_server)
             thread.start()
         elif(command == "stop"):
-            stop_server()
+            thread.join()
 
 if __name__ == "__main__" :
     try:
