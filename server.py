@@ -19,6 +19,8 @@ def stop_server():
     os.system(command)
     command: str = "pkill " + const_script_name
     os.system(command)
+    command: str = "pkill ShooterGameSer"
+    os.system(command)
 
 def listen_commands():
     while(True):
