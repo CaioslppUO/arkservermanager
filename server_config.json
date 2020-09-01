@@ -1,6 +1,6 @@
 {
     "server_config_file": "/home/caioslpp/server/ShooterGame/Saved/Config/LinuxServer/GameUserSettings.ini",
-    "XPMultiplier": "1.5",
+    "XPMultiplier": "1.2",
     "DisableStructureDecayPvE": "True",
     "DisableDinoDecayPvE": "True",
     "AllowFlyerCarryPvE": "True",
