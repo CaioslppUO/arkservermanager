@@ -19,6 +19,5 @@
     "opt11": " -server",
     "opt12": " -log",
     "opt13": " -ForceAllowCaveFlyers",
-    "opt14": " -ForceRespawnDinos",
     "opt15": " -ActiveEvent=FearEvolved"
 }
