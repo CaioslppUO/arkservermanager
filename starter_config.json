@@ -1,7 +1,7 @@
 {
     "launch_opt": "#!/bin/bash",
     "launch_file": "/home/caioslpp/server/ShooterGame/Binaries/Linux/ShooterGameServer ",
-    "map": "TheIsland?",
+    "map": "Valguero?",
     "listen": "Listen?",
     "server_name": "SessionName=ArkServer?",
     "password": "ServerPassword=0?",
