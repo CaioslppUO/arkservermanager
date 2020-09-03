@@ -1,0 +1,22 @@
+{
+    "launch_file": "/home/caioslpp/server/ShooterGame/Binaries/Linux/ShooterGameServer ",
+    "opt1": "Valguero_P",
+    "opt2": "?Listen",
+    "opt3": "?SessionName=ArkServer",
+    "opt4": "?ServerPassword=0",
+    "opt5": "?AdminPassword=000",
+    "opt6": "?AllowFlyerCarryPvE=true",
+    "opt7": "?OverrideStructurePlatformPrevention=true",
+    "opt8": "?OxygenSwimSpeedStatMultiplier=3.0",
+    "opt9": "?PreventSpawnAnimations=false",
+    "opt10": "?PvEAllowStructuresAtSupplyDrops=false",
+    "opt11": "?ShowFloatingDamageText=true",
+    "opt12": "?AdminLogging=true",
+    "opt13": "?AllowRaidDinoFeeding",
+    "opt14": "?AllowHitMarkers=true",
+    "opt15": "?AllowAnyoneBabyImprintCuddle=true",
+    "flag1": " -server",
+    "flag2": " -log",
+    "flag3": " -ForceAllowCaveFlyers",
+    "flag4": " -ActiveEvent=FearEvolved"
+}

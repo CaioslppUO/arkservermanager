@@ -1,0 +1,5 @@
+{
+    "server_start_name": "server_start.sh",
+    "server_start_location": "/home/caioslpp/server/ShooterGame/Binaries/Linux/",
+    "config_files_location": "/home/caioslpp/server/ShooterGame/Saved/Config/LinuxServer/"
+}
