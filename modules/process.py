@@ -48,6 +48,10 @@ class Process:
             raise Exception("Could not process game_user_settings.")
 
     def update_all(self):
+        print("\n---------------")
+        print("Starting Update.\n")
         self.process_server_starter()
         self.process_game_settings()
         self.process_game_user_settings()
+        print("\nUpdate finished")
+        print("---------------\n")

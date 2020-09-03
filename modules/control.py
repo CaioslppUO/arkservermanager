@@ -11,9 +11,8 @@ class Control:
             self.configuration.files_locations['server_start_location'],
             self.configuration.files_locations['server_start_name']
         )
-        print("\n\n")
+        print("\n")
         os.system(command)
-        print("Server Running.\n")
 
     def stop(self):
         command: str = "killall ShooterGameServer"
