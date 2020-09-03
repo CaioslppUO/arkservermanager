@@ -40,6 +40,7 @@ class Control:
                     self.update()
                 else:
                     print("Invalid command.")
+                time.sleep(5)
                 command = input(":")
         except:
             raise
