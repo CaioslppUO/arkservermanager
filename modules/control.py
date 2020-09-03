@@ -20,14 +20,17 @@ class Control:
         print("\n---------------")
         print("Stopping server.\n")
         command: str = "killall ShooterGameServer"
-        process = Popen(
-            args=command,
-            stdout=PIPE,
-            shell=True
-        )
-        process.communicate()[0]
-        while(process.communicate()[0] != "ShooterGameServer: no process found"):
+        try:
+            process = Popen(
+                args=command,
+                stdout=PIPE,
+                shell=True
+            )
             process.communicate()[0]
+            while(process.communicate()[0] != "ShooterGameServer: no process found"):
+                process.communicate()[0]
+        except:
+            pass
         print("\nServer stopped.")
         print("---------------\n")
 
