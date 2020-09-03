@@ -19,10 +19,9 @@ class Control:
         print("\n---------------")
         print("Stopping server.\n")
         command: str = "killall ShooterGameServer"
-        #os.system(command)
-        #while(os.popen('cat /etc/services').read() != "ShooterGameServer: no process found"):
-            #os.system(command)
-        print(os.popen(command).read())
+        os.system(command)
+        while(os.popen(command).read() != "ShooterGameServer: no process found"):
+            os.system(command)
         print("\nServer stopped.")
         print("---------------\n")
 
