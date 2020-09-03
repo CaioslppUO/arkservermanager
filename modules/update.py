@@ -1,4 +1,4 @@
-import configuration
+from configuration import Configuration
 class Update:
     def __init__(self):
         self.configuration = Configuration()
