@@ -37,8 +37,8 @@ class Control:
     def listen_commands(self):
         command: str = input(":")
         try:
-            os.system("clear")
             while(True):
+                os.system("clear")
                 if(command == "run"):
                     self.run()
                 elif(command == "stop"):
