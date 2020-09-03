@@ -5,8 +5,8 @@ class Configuration:
     def __init__(self):
         self.ark_manager_location: str = str(pathlib.Path(__file__).parent.absolute()) + "/"
         print(self.ark_manager_location)
-        self.config_path: str = self.ark_manager_location + "config/"
-        self.base_files_path: str = self.ark_manager_location + "base_files/"
+        self.config_path: str = self.ark_manager_location + "../config/"
+        self.base_files_path: str = self.ark_manager_location + "../base_files/"
         try:
             self.files_locations = self.__get_config("locations.json")
         except Exception as e:
