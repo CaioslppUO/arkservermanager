@@ -1,5 +1,5 @@
-import configuration
-import process
+from configuration import Configuration
+from process import Process
 import os,time
 
 class Control:
