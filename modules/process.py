@@ -1,6 +1,6 @@
 from typing import Any
-from modules.update import Update
-from modules.configuration import Configuration
+import update
+import configuration
 
 class Process:
     def __init__(self):

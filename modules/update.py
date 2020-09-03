@@ -1,5 +1,4 @@
-from modules.configuration import Configuration
-
+import configuration
 class Update:
     def __init__(self):
         self.configuration = Configuration()
