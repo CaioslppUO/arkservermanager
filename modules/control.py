@@ -11,25 +11,33 @@ class Control:
             self.configuration.files_locations['server_start_location'],
             self.configuration.files_locations['server_start_name']
         )
+        print("Server Running")
         print("\n")
         os.system(command)
 
     def stop(self):
+        print("\n---------------")
+        print("Stopping server.\n")
         command: str = "killall ShooterGameServer"
         os.system(command)
         time.sleep(4)
         os.system(command)
         time.sleep(2)
-        print("\n")
+        print("\nServer stopped.")
+        print("---------------\n")
 
     def update(self):
+        print("\n---------------")
+        print("Starting Update.\n")
         self.stop()
         Process().update_all()
-        print("\n")
+        print("\nUpdate finished")
+        print("---------------\n")
 
     def listen_commands(self):
         command: str = input(":")
         try:
+            os.system("clear")
             while(True):
                 if(command == "run"):
                     self.run()
