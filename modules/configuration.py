@@ -18,7 +18,7 @@ class Configuration:
         except:
             raise Exception("Could not read {}.".format(file))
 
-    def __get_base_file(self,file: str) -> list[str]:
+    def __get_base_file(self,file: str):
         try:
             with open(self.base_files_path+file, 'r') as base_file:
                 return base_file.read().splitlines()
@@ -43,7 +43,7 @@ class Configuration:
         except Exception as e:
             print(e)
 
-    def get_base_game_user_settings(self) -> Any:
+    def get_base_game_user_settings(self):
         try:
             return self.__get_base_file("base_game_user_settings.ini")
         except Exception as e:
