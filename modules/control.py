@@ -19,7 +19,7 @@ class Control:
         print("\n---------------")
         print("Stopping server.\n")
         command: str = "killall ShooterGameServer"
-        subprocess.check_output(command, shell=True)
+        os.popen(command).read
         #os.system(command)
         #while(os.popen(command).read() != "ShooterGameServer: no process found"):
             #os.system(command)
