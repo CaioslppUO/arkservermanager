@@ -1,6 +1,6 @@
 from configuration import Configuration
 from process import Process
-import os,time
+import os,time,subprocess
 
 class Control:
     def __init__(self):
@@ -19,7 +19,7 @@ class Control:
         print("\n---------------")
         print("Stopping server.\n")
         command: str = "killall ShooterGameServer"
-        print(os.popen(command).read())
+        print("Result:" + subprocess.check_output(command, shell=True))
         #os.system(command)
         #while(os.popen(command).read() != "ShooterGameServer: no process found"):
             #os.system(command)
