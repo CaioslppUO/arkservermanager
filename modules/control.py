@@ -35,7 +35,7 @@ class Control:
         print("---------------\n")
 
     def listen_commands(self):
-        command: str = input(":")
+        command: str = input("~:")
         try:
             while(True):
                 os.system("clear")
@@ -51,7 +51,7 @@ class Control:
                 else:
                     print("Invalid command.")
                 time.sleep(5)
-                command = input(":")
+                command = input("~:")
         except:
             raise
 
