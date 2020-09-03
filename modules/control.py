@@ -45,6 +45,9 @@ class Control:
                     self.stop()
                 elif(command == "update"):
                     self.update()
+                elif(command == "exit"):
+                    self.stop()
+                    exit(0)
                 else:
                     print("Invalid command.")
                 time.sleep(5)
