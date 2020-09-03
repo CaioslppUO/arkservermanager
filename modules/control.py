@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 from configuration import Configuration
 from process import Process
-import os,time,subprocess
+import os,time
 
 class Control:
     def __init__(self):

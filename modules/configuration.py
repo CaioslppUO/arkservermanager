@@ -1,10 +1,11 @@
-import json
+import json,pathlib
 from typing import Any
 
 class Configuration:
     def __init__(self):
-        self.config_path: str = "../config/"
-        self.base_files_path: str = "../base_files/"
+        self.ark_manager_location: str = str(pathlib.Path(__file__).parent.absolute()) + "/"
+        self.config_path: str = self.ark_manager_location + "config/"
+        self.base_files_path: str = self.ark_manager_location + "base_files/"
         try:
             self.files_locations = self.__get_config("locations.json")
         except Exception as e:
