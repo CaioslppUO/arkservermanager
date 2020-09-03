@@ -38,6 +38,7 @@ class Control:
         try:
             while(True):
                 os.system("clear")
+                print("Commands: run,update,stop,exit\n")
                 if(command == "run"):
                     self.run()
                 elif(command == "stop"):
