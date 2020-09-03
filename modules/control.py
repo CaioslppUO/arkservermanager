@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from configuration import Configuration
 from process import Process
 import os,time,subprocess
