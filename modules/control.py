@@ -1,7 +1,6 @@
 from configuration import Configuration
 from process import Process
 import os,time
-from subprocess import PIPE, Popen
 
 class Control:
     def __init__(self):
@@ -20,17 +19,10 @@ class Control:
         print("\n---------------")
         print("Stopping server.\n")
         command: str = "killall ShooterGameServer"
-        try:
-            process = Popen(
-                args=command,
-                stdout=PIPE,
-                shell=True
-            )
-            process.communicate()[0]
-            while(process.communicate()[0] != "ShooterGameServer: no process found"):
-                process.communicate()[0]
-        except:
-            pass
+        os.popen(command).read()
+        #os.system(command)
+        #while(os.popen(command).read() != "ShooterGameServer: no process found"):
+            #os.system(command)
         print("\nServer stopped.")
         print("---------------\n")
 
